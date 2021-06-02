@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM</title>
+<style type="text/css">
+	#div1{
+		width: 500px;
+		border:  2px solid yellow;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		html요소(태그) 추가 및 삭제하기
+		document.createElement(element) : 요소 생성
+		document.removeChild(element) : 자식 요소 삭제
+		document.appendChild(element) : 자식 요소 추가
+		document.insertBofore(element1, element2) : 요소2 앞에 요소 1 넣어주기
+		document.createTextNode(text) : text생성(시작태그 텍스트 끝태그) 
+	 -->
+	 
+	 <div id="div1">
+	 	<p id="p1">인재개발원</p>
+	 	<p id="p2">마포구 서교동</p>
+	 </div>
+	 <script type="text/javascript">
+	 	var p = document.createElement("p");  // p 태그생성
+	 	var hr = document.createElement("hr"); // hr 태그 생성
+	 	var txt = document.createTextNode("첨단빌딩"); //글자 생성
+	 	
+	 	
+	 	// p태그에 글자 넣기
+	 	p.appendChild(txt);
+	 	
+	 	
+	 	document.body.appendChild(hr);
+	 	document.body.appendChild(p);
+	 	
+	 	var p2 = document.createElement("p");  // p 태그생성
+	 	var hr2 = document.createElement("hr"); // hr 태그 생성
+	 	var txt2 = document.createTextNode("첨단빌딩2"); //글자 생성
+	 	p2.appendChild(txt2);
+	 	
+	 	var div1 = document.getElementById("div1");
+	 	div1.appendChild(hr2);
+	 	div1.appendChild(p2);
+	 	
+	 	
+	 	// id p1과 p2사이에 서 ㄴ넣기
+	 	var hr3 = document.createElement("hr");
+	 	var p2 = ocument.getElementById("p2");
+	 	
+	 	
+	 </script>
+
+</body>
+</html>

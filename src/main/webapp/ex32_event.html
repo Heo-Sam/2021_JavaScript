@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		width: 200px; height: 200px;
+		margin: auto;	
+	}
+</style>
+<script type="text/javascript">
+	function turnOn() {
+		document.getElementById("img_1").src="images/pic_bulbon.gif";
+	}
+	function turnOff() {
+		document.getElementById("img_1").src="images/pic_bulboff.gif";
+	}
+	function viewon() {
+		document.getElementById("img_2").src="images/pic_bulbon.gif";
+	}
+	function viewoff() {
+		document.getElementById("img_2").src="images/pic_bulboff.gif";
+	}
+</script>
+</head>
+<body>
+	<div>
+		<p>
+			<button onclick="turnOn()">켜기</button>
+			<button onclick="turnOff()">끄기</button>
+		</p>
+			<img id="img_1" alt="" src="images/pic_bulboff.gif">
+			<h3>버튼을 눌러주세요</h3>
+	</div>
+	<div>
+		<img id="img_2" alt="" src="images/pic_bulboff.gif" onmouseover="viewon()" onmouseout="viewoff()">
+		<h3>마우스를 그림에 올려주세요</h3>
+	</div>
+	<div>
+		<img id="img_3" alt="" src="images/image02.jpg" style="width: 200px; display: none;">
+		<h3 onmouseover="viewon2()" onmouseout="viewoff2()">해당 글자에 마우스를 올려주세요</h3>
+	</div>
+
+</body>
+</html>

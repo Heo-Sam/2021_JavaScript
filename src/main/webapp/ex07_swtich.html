@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>switch문</title>
+<script type="text/javascript">
+	// 자바의 switch문과 같음
+	// switch(key) {
+	//	case value: 내용; break;
+	//	case value: 내용; break;
+	// }
+	
+	// 받은 변수 k가 한국이면 서울, 일본이면 도쿄, 중국이면 베이징, 미국이면 워싱턴
+	// 나머지는 지구라고 출력하는 switch문 작성
+	var str = prompt("나라를 입력하세요.");
+	var res = "";
+	switch (str) {
+	case "한국": res="서울"; break;
+	case "일본": res="도쿄"; break;
+	case "중국": res="베이징"; break;
+	case "미국": res="워싱턴"; break;
+	default: res="현재 데이터에 없는 나라"; break;
+	}
+	document.write("당신이 입력한 나라는 " + str + "이며, 수도는 " + res + "입니다.");
+</script>
+</head>
+<body>
+
+</body>
+</html>
